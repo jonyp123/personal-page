@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Quicksand', sans-serif;
+}
+#navbar {
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  height: 100px;
+}
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+  opacity: 0.5;
+  height: 70px;
+}
+
+#navbar li {
+  display: inline-block;
+  margin-left:150px;
+  margin-right:150px;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  padding-top: 25px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  transform-origin: 50% 50%;
+  animation: jump .4s ease-in;
+}
+
+@keyframes jump {
+  0%   {transform: translateY(0);}
+  50%  {transform: translateY(-20px);}
+  100%  {transform: translateY(0);}
+}
